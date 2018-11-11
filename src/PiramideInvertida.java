@@ -4,7 +4,7 @@ public class PiramideInvertida {
         System.out.println(cadenaPiramideInvertida(filas));
     }
 
-    private static String cadenaPiramideInvertida(int filas) {
+    public static String cadenaPiramideInvertida(int filas) {
 
         return null;
     }
