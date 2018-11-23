@@ -6,22 +6,21 @@ public class PiramideInvertida {
 
     public static String cadenaPiramideInvertida(int filas) {
         String salida = "";
-
-        int ancho=(filas-1)*2+1;
-        int espaciosIniciales=0;
-
-        salida+="\n";
+        int asteriscos = (filas - 1) * 2 + 1;
+        int espacios = 0;
 
         for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < espaciosIniciales; j++) {
+
+            for (int j = 0; j < espacios; j++) {
                 salida+=" ";
             }
-            for (int j = 0; j < ancho; j++) {
+            for (int j = 0; j < asteriscos; j++) {
                 salida+="*";
             }
+
             salida+="\n";
-            ancho=ancho-2;
-            espaciosIniciales++;
+            asteriscos -= 2;
+            espacios++;
         }
         return salida;
     }
